@@ -35,6 +35,7 @@ This project is a secure web application developed for a fictional telecommunica
 - **Default.aspx**: Login page
 - **Registration.aspx**: User registration
 - **Logged_in.aspx**: Main dashboard for customer management
+- **webapp.sql**: SQL database script containing all table definitions and initial setup
 - **Change_Password.aspx**: Password change functionality
 - **Forgot_password.aspx**: Password recovery workflow
 - **Reset_password.aspx**: Password reset implementation
@@ -51,7 +52,8 @@ This project is a secure web application developed for a fictional telecommunica
 ### Installation
 1. Clone the repository to your local machine
 2. Open MySQL Workbench and create a new schema called `webapp`
-3. Execute the following SQL commands to create a database user:
+3. Import the database structure using the included `webapp.sql` file which contains all necessary tables and initial setup
+4. Execute the following SQL commands to create a database user:
    ```sql
    CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
    GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;
